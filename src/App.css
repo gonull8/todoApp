@@ -1,0 +1,79 @@
+body {
+  background-color: #f0f2f5;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 500px;
+  margin: 60px auto;
+  background-color: rgb(238, 226, 163);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: cursive;
+
+}
+
+.app-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: rgb(204, 109, 36);
+}
+
+.todo-input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.add-button {
+  margin-left: 10px;
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: rgb(87, 148, 116);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 20px;
+  color: rgb(106, 44, 8);
+  font-weight: 600;
+  font-family: cursive;
+}                                          
+.delete-button {
+  position: absolute;
+  right: 1rem; /* Sağdan 16px boşluk */
+  top: 50%; /* Yüksekliğin ortası */
+  transform: translateY(-50%); /* Dikey ortalama */
+  color: #ef4444; /* Tailwind'in text-red-500 karşılığı */
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete-button:hover {
+  color: #b91c1c; /* Tailwind'in text-red-700 karşılığı */
+}
